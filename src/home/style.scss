@@ -1,0 +1,75 @@
+// Home page css
+@import '../styles/variables';
+
+.userReposLoader {
+	text-align: center;
+	padding-top: 10%;
+}
+
+
+.home-wrapper {
+	& .main-heading {
+		font-size: 48px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    line-height: 60px;
+	}
+	& .info-section {
+		background: $lighterGray;
+		padding: 60px 0;
+	}
+	& .info-block {
+		border-radius: 5px;
+		border: 1px solid $lightGray;
+		background: white;
+		margin: 0 10px 10px 0;
+		padding: 10px;
+		& .info-block-heading {
+			font-weight: 100;
+		}
+		& img {
+			padding: 10px;
+			margin-bottom: 10px;
+		}
+		& p {
+			font-size: 13px;
+		}
+	}
+
+	& .info-main-text {
+		padding-left: 38px;
+	}
+}
+
+.mission-wrapper {
+	padding: 60px 0;
+	& .mission-img-back {
+	}
+	& .mission-img-front {
+		position: absolute;
+    padding: 28px;
+    right: 6px;
+	}
+	.extra-padding {
+		padding: 100px;
+	}
+}
+
+.icons-wrapper {
+	background-image: linear-gradient(to right, #7044bc , $blue);
+	padding: 20px;
+	& img {
+		padding: 20px;
+	}
+	& h5 {
+		color: white;
+	}
+}
+
+.fw-100 {
+	font-weight: 100;
+}
+
+.fw-200 {
+	font-weight: 200;
+}
