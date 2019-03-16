@@ -66,6 +66,77 @@
 	}
 }
 
+.blog-wrapper {
+	& .blog-heading {
+		font-size: 2.5rem;
+		font-weight: 100;
+		& span {
+			font-size: 2.5rem;
+			font-weight: 800;
+		}
+	}
+
+	& .blog-tile {
+		border: 1px solid $lightGray;
+		& .blog-tile-image {
+			height: 300px;
+			width: 100%;
+			background-size: cover !important;
+			background-position: 50% !important;
+		}
+		& .tile-contents {
+			padding: 15px;
+			& .date {
+				color: lightgray;
+			}
+		}
+	}
+}
+
+.testimonials-wrapper {
+	& .testimonials-text {
+		border: 1px solid #e1e4e7;
+    padding: 20px;
+    position: absolute;
+    right: -100px;
+    z-index: 1;
+    background: white;
+    font-weight: 100;
+    line-height: 2;
+		text-align: center;
+		& p {
+			font-style: italic;
+		}
+	}
+	& .commas {
+		font-size: 100px;
+    color: #e1e4e7;
+    line-height: 75px;
+    font-style: oblique;
+    font-weight: 100;
+	}
+}
+
+.clients-wrapper {
+	& .blog-heading {
+		font-size: 2.5rem;
+		font-weight: 100;
+		& span {
+			font-size: 2.5rem;
+			font-weight: 800;
+		}
+	}
+	& .clients-tile {
+		border: 1px solid $lightGray;
+		& img {
+			width: 100%;
+			height: 140px;
+			object-fit: contain;
+			padding: 20px;
+		}
+	}
+}
+
 .fw-100 {
 	font-weight: 100;
 }

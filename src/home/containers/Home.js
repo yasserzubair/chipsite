@@ -6,6 +6,27 @@ import getUserRepos from '../thunks/getUserRepos';
 
 import { bindActionCreators } from 'redux'
 
+var blogData = [
+  {
+    image: require('../../static/blog-01.png'),
+    title: 'Digital Marketing',
+    text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inven.',
+    date: 'June 19 2018',
+  },
+  {
+    image: require('../../static/blog-02.png'),
+    title: 'Digital Marketing',
+    text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inven.',
+    date: 'June 19 2018',
+  },
+  {
+    image: require('../../static/blog-03.png'),
+    title: 'Digital Marketing',
+    text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inven.',
+    date: 'June 19 2018',
+  },
+]
+
 class UserRepos extends Component {
 
 	componentDidMount() {
@@ -102,7 +123,7 @@ class UserRepos extends Component {
             </div>
           </div>
         </div>
-        <div id='icons-section' className='row text-center icons-wrapper'>
+        <div id='icons-section' className='row text-center icons-wrapper space-8'>
           {/* <div className='col-sm-2'>
             <img height='100px' src={require('../../static/strategy.png')} alt=""/>
             <h5>Strategy Development</h5>
@@ -126,6 +147,72 @@ class UserRepos extends Component {
           {/* <div className='col-sm-2'>
             <img height='100px' src={require('../../static/HID.png')} alt=""/>
           </div> */}
+        </div>
+        <div id='blog-section' className='blog-wrapper container space-8'>
+          <div className='blog-heading text-center'>
+            <p>Our <span>Blog</span></p>
+          </div>
+          <div className='row'>
+            {blogData.map((item, index) => {
+              return <div className='col-sm-4 space-4'>
+                <div className='blog-tile'>
+                  <div className='blog-tile-image' style={{background: `url(${item.image})`}}>
+                  </div>
+                  <div className='tile-contents'>
+                    <p className='date space-2'>{item.date}</p>
+                    <h3 className='heading space-2'>{item.title}</h3>
+                    <p className='text space-2'>{item.text}</p>
+                    <a className='blue'>Read more</a>
+                  </div>
+                </div>
+              </div>
+            })}
+          </div>
+        </div>
+        <div id='testimonials-section' className='testimonials-wrapper container space-8'>
+          <div className='row'>
+            <div className='col-sm-6 vcenter'>
+              <div className='testimonials-text'>
+                <h1 className='commas'>"</h1>
+                <p>I have had the pleasure of working with CTC as a Consultant/Trainer in Health and Nutrition on numerous occasions. The entire CTC team is very professional, courteous and respectful at all times. I would recommend CTC without hesitation to colleagues and agencies for their expertise in numerous areas and professional attitude in meeting deadlines etc</p>
+                <h5>Dr.Safdar Kamal Pasha</h5>
+              </div>
+            </div>
+            <div className='col-sm-6 testimonials-image'>
+              <img width='100%' height='400px' src={require('../../static/testimonial-pic.png')} alt=""/>
+            </div>
+          </div>
+        </div>
+        <div id='clients-section' className='clients-wrapper container space-4'>
+          <div className='blog-heading text-center'>
+            <p>Our <span>Clients</span></p>
+          </div>
+            <div className="row">
+              <div className="col-sm-3 text-center">
+                <div className='clients-tile space-2'>
+                  <img src={require('../../static/client-01.png')} alt=""/>
+                </div>
+                <p>Winrock</p>
+              </div>
+              <div className="col-sm-3 text-center">
+                <div className='clients-tile space-2'>
+                  <img src={require('../../static/client-02.png')} alt=""/>
+                </div>
+                <p>Who</p>
+              </div>
+              <div className="col-sm-3 text-center">
+                <div className='clients-tile space-2'>
+                  <img src={require('../../static/client-03.png')} alt=""/>
+                </div>
+                <p>Usaid</p>
+              </div>
+              <div className="col-sm-3 text-center">
+                <div className='clients-tile space-2'>
+                  <img src={require('../../static/client-04.png')} alt=""/>
+                </div>
+                <p>Unicef</p>
+              </div>
+            </div>
         </div>
 			</div>
 		);
