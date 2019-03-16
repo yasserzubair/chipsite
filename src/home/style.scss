@@ -137,6 +137,26 @@
 	}
 }
 
+@media (max-width: 767px) {
+  .hidden-xs{
+    display: none;
+  }
+}
+
+.footer-wrapper {
+	padding: 20px;
+	& p, h1, h2, h3, h4, h5, h6 {
+		color: white;
+	}
+
+	& .tors {
+		& a {
+			color: #64ba64 !important;
+		}
+	}
+	
+}
+
 .fw-100 {
 	font-weight: 100;
 }
