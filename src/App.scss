@@ -17,8 +17,7 @@ footer {
 	// position: fixed;
 	bottom: 0;
 	width: 100%;
-	background: #efefef;
-	padding: 5px 0;
+	background: $darkerGray;
 }
 .AppLoader {
 	text-align: center;
@@ -54,7 +53,7 @@ footer {
 }
 
 .space-4 {
-	margin-bottom: 20px;
+	margin-bottom: 20px !important;
 }
 
 .space-5 {
