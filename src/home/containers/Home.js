@@ -117,7 +117,7 @@ class UserRepos extends Component {
                 </p>
               </div>
             </div>
-            <div className='col-sm-6 no-padding text-right'>
+            <div className='col-sm-6 hidden-xs no-padding text-right'>
               <img height='600px' className='mission-img-back' src={require('../../static/mission-back(img).png')} alt=""/>
               <img height='600px' className='mission-img-front' src={require('../../static/mission-front(img).png')} alt=""/>
             </div>
@@ -171,7 +171,7 @@ class UserRepos extends Component {
         </div>
         <div id='testimonials-section' className='testimonials-wrapper container space-8'>
           <div className='row'>
-            <div className='col-sm-6 vcenter'>
+            <div className='col-sm-6 vcenter hidden-xs'>
               <div className='testimonials-text'>
                 <h1 className='commas'>"</h1>
                 <p>I have had the pleasure of working with CTC as a Consultant/Trainer in Health and Nutrition on numerous occasions. The entire CTC team is very professional, courteous and respectful at all times. I would recommend CTC without hesitation to colleagues and agencies for their expertise in numerous areas and professional attitude in meeting deadlines etc</p>
